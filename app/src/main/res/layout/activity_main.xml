@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name">
+
+                <LinearLayout
+                    android:id="@+id/LinearHoriz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="320dp"
+                        android:layout_height="86dp"
+                        android:text="@string/service_wrehouse_packing_verification"
+                        android:textAlignment="center"
+                        android:textColor="#070707"
+                        android:textSize="24sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="84dp"
+                        android:layout_height="82dp"
+                        app:srcCompat="@drawable/warehouse_clipart_stock_inventory_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edBadgeNum"
+                            android:layout_width="245dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:hint="Username"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp" />
+
+                        <TextView
+                            android:id="@+id/tvScanMode"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:gravity="center"
+                            android:text="@string/select_scan_mode"
+                            android:textAlignment="center"
+                            android:textColor="#020202"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnPSB"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="@string/product_set_semi_product"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            app:iconTint="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnPCBA"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="PCB Assy"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnRMPN"
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_margin="10dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="Raw Material"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/PBMain"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            tools:visibility="visible" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

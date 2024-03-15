@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ServiceWarehousePackingVerification</string>
+    <string name="select_scan_mode">Select Scan Mode</string>
+    <string name="service_wrehouse_packing_verification">Service Wrehouse Packing Verification</string>
+    <string name="product_set_semi_product">Product set &#38; Semi Product</string>
+    <string name="psbtitle">Product set &#38; Semi Product</string>
+    <string name="becode">Picklist Barcode</string>
+    <string name="save">Save</string>
+    <string name="title_activity_pcbassy_verify">PCB Assy Verify</string>
+    <string name="psb_assy_verification">PSB Assy Verification</string>
+    <string name="headerItemNo">No.</string>
+    <string name="headerMaterialNo">Material</string>
+    <string name="headerBatchNo">Batch</string>
+    <string name="headerPickQty">Quantity</string>
+    <string name="headerVerify">Verify</string>
+</resources>
